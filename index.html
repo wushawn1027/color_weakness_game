@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/color-weakness.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="">Color Weakness Game</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="s1">
+            <h1>
+                色弱遊戲
+            </h1>
+            <h3>
+                在一分鐘內，找出並按下所有色塊裡，顏色不同的那一個方塊，挑戰自己的極限吧！
+            </h3>
+            <div id="start" onclick="secondPassed()" class="start">
+                <span class="text">Start</span>
+                <button type="button" name="Hover">Start</button>
+            </div>
+        </section>
+
+        <section class="s2">
+            <div class="score score-rwd">
+                <span class="title">Scores：</span>
+                <span id="points" class="num">00 p</span>
+            </div>
+
+            <div class="score score-none">
+                <span class="title">Scores：</span>
+                <span id="points-none" class="num">00 p</span>
+            </div>
+            <div class="time time-none">
+                <span class="title">Time：</span>
+                <span id="countdown-none" class="num">60 s</span>  
+            </div>
+
+            <div class="mid-box">
+                <div class="box"></div>
+                <button class="restart">Restart</button>
+            </div>
+            
+            <div class="time time-rwd">
+                <span class="title">Time：</span>
+                <span id="countdown" class="num">60 s</span>  
+            </div>
+            
+        </section>
+
+        <section class="s3">
+            <h2>測驗結果：</h2>
+            <h3 class="rate">111111111</h3>
+            <div class="btn">
+                <button id="back">回到首頁</button>
+                <a class="author" type="button" href="https://www.cakeresume.com/wuyh" title="contact me" 
+                target="_blank">作者資訊</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <a class="link" href="https://www.cakeresume.com/wuyh" title="contact me" target="_blank"><i class="fa-solid fa-copyright"></i>WuShawn</a>
+    </footer>
+
+    <script src="/js/color-weakness.js"></script>
+</body>
+</html>
