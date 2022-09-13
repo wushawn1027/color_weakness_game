@@ -86,8 +86,8 @@ var start = document.getElementById('start');
             abox.style.opacity = 0.5 + level * 0.05;
 
             var not_abox_All = document.querySelectorAll(`.box .innerbox:not(:nth-child(${answer}))`);
-            not_abox_All.forEach(function(nbox,index){  // 第一個參數 nbox: 代表單元個體(這是一個box)
-                                                        // 第二個參數 index: 代表註標(標示編號)
+            not_abox_All.forEach(function(nbox,index){ 
+            
                 nbox.addEventListener('click',function(){
                     alert('答錯囉!')
                 })
